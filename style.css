@@ -1,0 +1,67 @@
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Poppins:wght@200&display=swap');
+
+
+
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Oxygen', sans-serif;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(50deg, #ed9898, #233fad);
+      height: 100vh;
+  }
+
+  .container {
+      width: 480px;
+      background: linear-gradient(-50deg, #ed9898, #233fad);
+      border-radius: 10px;
+      padding: 30px 30px;
+
+  }
+
+  .container :where(textarea, input, select, button) {
+      width: 100%;
+      outline: none !important;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+  }
+
+  .container :where(textarea) {
+      resize: none;
+      overflow: auto;
+      height: 300px;
+      border: 1.1px solid #440e0e;
+  }
+
+  .container .file-option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-bottom: 10px;
+  }
+
+  .file-option .opt {
+      width: calc(100% / 2 - 8px);
+  }
+
+  .file-option :where(input, select),
+  .container button {
+      height: 25px;
+  }
+
+
+  .container button {
+      background-color: rgb(245, 213, 52);
+      cursor: pointer;
+      margin: 3px 0;
+  }
